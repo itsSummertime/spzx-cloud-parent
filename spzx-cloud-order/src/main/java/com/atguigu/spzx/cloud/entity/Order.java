@@ -19,6 +19,6 @@ public class Order implements Serializable {
     private String name;
     private Long price;
     private Integer num;
-
+    private User user;
 
 }

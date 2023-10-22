@@ -4,11 +4,18 @@ server:
 
 # 配置数据库的连接信息
 spring:
+  application:
+    name: spzx-cloud-order
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/spzx-cloud-order?characterEncoding=UTF8
     username: root
     password: root
+  # 配置nacos注册中心的地址
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
 
 # 配置mybatis的相关信息
 mybatis:
